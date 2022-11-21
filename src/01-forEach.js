@@ -43,19 +43,13 @@ function printSongDetails(songs) {
  * Logs out all of the song titles which have a runtime over three minutes.
  * @param {Object[]} songs - An array of songs. See the song data for more.
  */
-function printSongTitlesOverThreeMinutes(songs) {
-  let arr = []
-  songs.forEach(( song) => {
-    if(song.runtimeInSecond > 180)
-   arr.push(song.title)
-   console.log(song.title)
-  }
-
-  )
+function printSongTitlesOverThreeMinutes(songs) { songs.forEach((song) => {song.runtimeInSeconds > 180
+  console.log(song.title)
+}
+  ) 
 }
 
-
-module.exports = {
+  module.exports = {
   printAllSongTitles,
   printSongDetails,
   printSongTitlesOverThreeMinutes,
